@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@utility container{
+    margin: auto;
+    padding-inline : 2rem;
+}
+
+@theme{
+    --color-primary: #132238;
+    --color-secondary: #556070;
+    --color-brand-color: #A53DFF;
+    --color-nav-color : #333333;
+    --color-banner-count : #EDD8FF;
+    --font-work-sans : "Work Sans", sans-serif;
+    --font-poppins : "Poppins", sans-serif;
+}
+
+
+
+body{
+    background: url(../public/images/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+a{
+    @apply inline-block;
+}
