@@ -5,6 +5,7 @@ import About from "./pages/About"
 import ErrorPage from "./pages/ErrorPage"
 import Process from "./pages/Process"
 import Portfolio from "./pages/Portfolio"
+import Blog from "./pages/Blog"
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/process" element={<Process />} />
-            <Route path="/portfolio" element={<Portfolio/>}/>
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blog" element={<Blog/>}/>
             <Route path="*" element={<ErrorPage/>}/>
           </Route>
         </Routes>
