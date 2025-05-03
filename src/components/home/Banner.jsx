@@ -5,7 +5,7 @@ import BannerCounter from "../utils/BannerCounter";
 const Banner = () => {
   return (
     <>
-      <section id="banner" className="mt-32">
+      <section id="banner" className="my-32">
         <div className="container">
           <div className="flex justify-between">
             <div>

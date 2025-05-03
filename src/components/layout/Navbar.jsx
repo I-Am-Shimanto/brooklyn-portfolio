@@ -17,10 +17,10 @@ const Navbar = () => {
               <Link className='px-6 py-3' to="/">Home</Link>
             </li>
             <li>
-              <Link className='px-6 py-3' to="/">About</Link>
+              <Link className='px-6 py-3' to="/about">About</Link>
             </li>
             <li>
-              <Link className='px-6 py-3' to="/">Process</Link>
+              <Link className='px-6 py-3' to="/process">Process</Link>
             </li>
             <li>
               <Link className='px-6 py-3' to="/">Portfolio</Link>
