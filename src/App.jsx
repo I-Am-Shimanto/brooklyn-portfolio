@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import ErrorPage from "./pages/ErrorPage"
 import Process from "./pages/Process"
+import Portfolio from "./pages/Portfolio"
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/process" element={<Process/>}/>
+            <Route path="/process" element={<Process />} />
+            <Route path="/portfolio" element={<Portfolio/>}/>
             <Route path="*" element={<ErrorPage/>}/>
           </Route>
         </Routes>
