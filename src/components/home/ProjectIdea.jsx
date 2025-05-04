@@ -7,7 +7,7 @@ const ProjectIdea = () => {
     <>
       <section className="bg-primary py-[100px]" id="projectidea">
         <div className="container">
-          <h2 className="max-w-[621px] text-5xl font-work-sans font-semibold text-white leading-14 text-center mx-auto">
+          <h2 className="max-w-[621px] text-4xl lg:text-5xl font-work-sans font-semibold text-white leading-14 text-center mx-auto">
             Do you have Project Idia? Let's discuss your project!
           </h2>
           <p className="max-w-[621px] text-lg font-normal font-work-sans text-secondary leading-6 my-8 text-center mx-auto">

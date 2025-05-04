@@ -13,9 +13,9 @@ const About = () => {
     <>
       <section id="about" >
         <div className="container">
-          <div className="flex justify-between p-28 bg-white rounded-2xl translate-y-28">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:p-28 bg-white rounded-2xl translate-y-28">
             <div className="img">
-              <img src="images/about_image.png" alt="about_image" />
+              <img className="" src="images/about_image.png" alt="about_image" />
               <div className="flex p-3 bg-white w-fit rounded-sm mx-auto -translate-y-9">
                 <Link className="p-4 text-lg text-brand-color" to="/">
                   <FaFacebookF />
@@ -37,8 +37,8 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="text max-w-[536px] mt-[76px]">
-              <h2 className="text-4xl font-semibold font-work-sans text-primary leading-12">
+            <div className="text max-w-[536px] mt-10 lg:mt-[76px]">
+              <h2 className="text-2xl lg:text-4xl font-semibold font-work-sans text-primary leading-10 lg:leading-12">
                 I am Professional User Experience Designer
               </h2>
               <p className="text-lg font-normal font-work-sans text-secondary leading-6 mt-8">
@@ -50,7 +50,7 @@ const About = () => {
                 I design and develop services for customers specializing
                 creating stylish, modern websites, web services.
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4">
                 <PrimaryBtn path="/" title="My Project" />
                 <SecondBtn path="/" title="Download CV" />
               </div>

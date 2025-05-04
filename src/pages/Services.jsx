@@ -7,8 +7,8 @@ const Services = () => {
     <>
       <section className="py-[150px] bg-[#F0F1F3]" id="user">
         <div className="container">
-          <div className="flex items-center justify-between">
-            <div className="text">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="text mb-10 md:mb-0">
               <h2 className="text-5xl font-semibold font-work-sans text-nav-color leading-14 mb-6">
                 What I do?
               </h2>

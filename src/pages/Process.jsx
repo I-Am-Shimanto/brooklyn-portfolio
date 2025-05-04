@@ -6,7 +6,7 @@ const Process = () => {
     <>
       <section id="process" className="bg-[#F0F1F3]">
         <div className="container">
-          <div className="flex justify-between pt-[248px] pb-[140px]">
+          <div className="flex flex-col lg:flex-row justify-between pt-20 lg:pt-[248px] pb-[140px]">
             <div className="text max-w-[529px] mt-[180px]">
               <h2 className="text-5xl font-semibold font-work-sans text-primary leading-14">
                 Work Process
@@ -21,7 +21,7 @@ const Process = () => {
                 purus arcu, varius eget velit non.
               </p>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-col lg:flex-row gap-6">
               <div className="flex flex-col gap-6">
                 <ProcessCard
                   image="images/process1.png"

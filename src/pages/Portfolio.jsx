@@ -10,7 +10,7 @@ const Portfolio = () => {
           <h2 className="text-5xl font-work-sans font-semibold text-primary leading-14 text-center">
             Portfolio
           </h2>
-          <p className="w-[577px] text-lg font-work-sans font-normal text-secondary leading-6 text-center mx-auto mt-6 mb-[46px]">
+          <p className="max-w-[577px] text-lg font-work-sans font-normal text-secondary leading-6 text-center mx-auto mt-6 mb-[46px]">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
