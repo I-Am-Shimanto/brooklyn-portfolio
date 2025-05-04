@@ -29,9 +29,9 @@ const Navbar = () => {
               <Link className='px-6 py-3' to="/blog">Blog</Link>
             </li>
             <li>
-              <Link className='px-6 py-3' to="/">Services</Link>
+              <Link className='px-6 py-3' to="/services">Services</Link>
             </li>
-          <PrimaryBtn path="/" title="Contact" />
+          <PrimaryBtn path="/contact" title="Contact" />
           </ul>
         </div>
       </nav>

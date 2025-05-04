@@ -6,6 +6,8 @@ import ErrorPage from "./pages/ErrorPage"
 import Process from "./pages/Process"
 import Portfolio from "./pages/Portfolio"
 import Blog from "./pages/Blog"
+import Services from "./pages/Services"
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/process" element={<Process />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<Blog/>}/>
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact/>}/>
             <Route path="*" element={<ErrorPage/>}/>
           </Route>
         </Routes>

@@ -5,6 +5,10 @@ import Process from './Process'
 import Portfolio from './Portfolio'
 import ProjectIdea from '../components/home/ProjectIdea'
 import Blog from './Blog'
+import Services from './Services'
+import Clients from '../components/home/Clients'
+import Testimonial from '../components/home/Testimonial'
+import Contact from './Contact'
 
 const Home = () => {
   return (
@@ -14,7 +18,11 @@ const Home = () => {
       <Process />
       <Portfolio />
       <ProjectIdea />
-      <Blog/>
+      <Blog />
+      <Services />
+      <Clients />
+      <Testimonial />
+      <Contact/>
       </>
   )
 }
