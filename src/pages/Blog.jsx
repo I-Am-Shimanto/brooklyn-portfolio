@@ -13,7 +13,7 @@ const Blog = () => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-          <div className="flex flex-col flex-wrap md:flex-row justify-between ">
+          <div className="flex flex-col flex-wrap md:flex-row justify-between items-center">
             <BlogCard
               image="images/blog1.png"
               heading="22 Oct, 2020 / 246 Comments"

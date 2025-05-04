@@ -36,11 +36,11 @@ const Contact = () => {
       setMessageErr("Enter Your Message!");
     } else {
       setSubmit("Submitted!");
-      setName("")
-      setEmail("")
-      setLocation("")
-      setBudget("")
-      setMessage("")
+      setName("");
+      setEmail("");
+      setLocation("");
+      setBudget("");
+      setMessage("");
     }
   };
 
@@ -64,21 +64,21 @@ const Contact = () => {
               </div>
               <div className="flex p-3 bg-white w-fit rounded-sm mt-9">
                 <Link
-                  className="p-4 text-lg text-white bg-brand-color rounded-sm"
+                  className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color rounded-sm transition-all duration-300"
                   to="/"
                 >
                   <FaFacebookF />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color transition-all duration-300 rounded-sm" to="/">
                   <IoIosBasketball />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color transition-all duration-300 rounded-sm" to="/">
                   <FaInstagram />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color transition-all duration-300 rounded-sm" to="/">
                   <FaLinkedinIn />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color transition-all duration-300 rounded-sm" to="/">
                   <FaBehance />
                 </Link>
               </div>
@@ -89,9 +89,13 @@ const Contact = () => {
                 but the majority have suffered alte.
               </p>
               <form onSubmit={handleSubmit} action="">
-                {nameErr && <p className="text-base font-semibold text-red-500">{nameErr}</p>}
+                {nameErr && (
+                  <p className="text-base font-semibold text-red-500">
+                    {nameErr}
+                  </p>
+                )}
                 <input
-                  className="w-full h-[38px] outline-none border-b-[2px] border-brand-color mb-2"
+                  className="w-full h-[38px] outline-none border-b-[2px] border-secondary hover:border-brand-color mb-2 transition-all duration-300"
                   onChange={(e) => {
                     setName(e.target.value);
                     setNameErr("");
@@ -100,9 +104,13 @@ const Contact = () => {
                   type="text"
                   placeholder="Name*"
                 />
-                {emailErr && <p className="text-base font-semibold text-red-500">{emailErr}</p>}
+                {emailErr && (
+                  <p className="text-base font-semibold text-red-500">
+                    {emailErr}
+                  </p>
+                )}
                 <input
-                  className="w-full h-[38px] outline-none border-b-[2px] border-brand-color mb-2"
+                  className="w-full h-[38px] outline-none border-b-[2px] border-secondary hover:border-brand-color mb-2 transition-all duration-300"
                   onChange={(e) => {
                     setEmail(e.target.value), setEmailErr("");
                   }}
@@ -110,9 +118,13 @@ const Contact = () => {
                   type="email"
                   placeholder="Email*"
                 />
-                {locationErr && <p className="text-base font-semibold text-red-500">{locationErr}</p>}
+                {locationErr && (
+                  <p className="text-base font-semibold text-red-500">
+                    {locationErr}
+                  </p>
+                )}
                 <input
-                  className="w-full h-[38px] outline-none border-b-[2px] border-brand-color mb-2"
+                  className="w-full h-[38px] outline-none border-b-[2px] border-secondary hover:border-brand-color mb-2 transition-all duration-300"
                   onChange={(e) => {
                     setLocation(e.target.value), setLocationErr("");
                   }}
@@ -120,9 +132,13 @@ const Contact = () => {
                   type="text"
                   placeholder="Location"
                 />
-                {budgetErr && <p className="text-base font-semibold text-red-500">{budgetErr}</p>}
+                {budgetErr && (
+                  <p className="text-base font-semibold text-red-500">
+                    {budgetErr}
+                  </p>
+                )}
                 <input
-                  className="w-full h-[38px] outline-none border-b-[2px] border-brand-color mb-2"
+                  className="w-full h-[38px] outline-none border-b-[2px] border-secondary hover:border-brand-color mb-2 transition-all duration-300"
                   onChange={(e) => {
                     setBudget(e.target.value), setBudgetErr("");
                   }}
@@ -130,18 +146,26 @@ const Contact = () => {
                   type="number"
                   placeholder="Budget*"
                 />
-                {messageErr && <p className="text-base font-semibold text-red-500">{messageErr}</p>}
+                {messageErr && (
+                  <p className="text-base font-semibold text-red-500">
+                    {messageErr}
+                  </p>
+                )}
                 <textarea
-                  className="w-full h-12 outline-none border-b-2 border-brand-color mb-12"
+                  className="w-full h-12 outline-none border-b-2 border-secondary hover:border-brand-color mb-12 transition-all duration-300"
                   onChange={(e) => {
                     setMessage(e.target.value), setMessageErr("");
                   }}
                   value={message}
                   placeholder="Message*"
                 ></textarea>
-                {submit && <p className="text-black font-bold font-work-sans text-2xl">{submit}</p>}
+                {submit && (
+                  <p className="text-black font-bold font-work-sans text-2xl">
+                    {submit}
+                  </p>
+                )}
                 <div>
-                  <button className="px-6 py-3 bg-brand-color text-white flex gap-3 items-center cursor-pointer rounded-sm text-base font-semibold font-work-sans leading-6">
+                  <button className="px-6 py-3 bg-brand-color hover:bg-black transition-all duration-300 text-white flex gap-3 items-center cursor-pointer rounded-sm text-base font-semibold font-work-sans leading-6">
                     Submit{" "}
                     <LiaLocationArrowSolid className="rotate-90 text-2xl" />
                   </button>

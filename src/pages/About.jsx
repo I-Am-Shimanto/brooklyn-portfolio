@@ -17,22 +17,22 @@ const About = () => {
             <div className="img">
               <img className="" src="images/about_image.png" alt="about_image" />
               <div className="flex p-3 bg-white w-fit rounded-sm mx-auto -translate-y-9">
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color duration-300 rounded-sm" to="/">
                   <FaFacebookF />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color duration-300 rounded-sm" to="/">
                   <IoIosBasketball />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color duration-300 rounded-sm" to="/">
                   <FaInstagram />
                 </Link>
                 <Link
-                  className="p-4 text-lg text-white bg-brand-color rounded-sm"
+                  className="p-4 text-lg text-brand-color hover:text-white duration-300 hover:bg-brand-color rounded-sm"
                   to="/"
                 >
                   <FaLinkedinIn />
                 </Link>
-                <Link className="p-4 text-lg text-brand-color" to="/">
+                <Link className="p-4 text-lg text-brand-color hover:text-white hover:bg-brand-color duration-300 rounded-sm" to="/">
                   <FaBehance />
                 </Link>
               </div>

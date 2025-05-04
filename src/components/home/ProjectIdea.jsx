@@ -16,7 +16,7 @@ const ProjectIdea = () => {
           </p>
           <div className="text-center">
             <Link
-              className="py-3 pl-6 pr-[30px] bg-brand-color text-white text-base font-semibold font-work-sans leading-6"
+              className="py-3 pl-6 pr-[30px] bg-brand-color hover:bg-black duration-300 rounded-sm text-white text-base font-semibold font-work-sans leading-6"
               to="/"
             >
               <p className="flex items-center gap-3">

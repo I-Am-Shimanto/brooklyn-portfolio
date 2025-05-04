@@ -21,7 +21,7 @@ const Banner = () => {
                 design.
               </p>
               <PrimaryBtn path="/" title="Say Hello!" />
-              <div className="flex flex-wrap gap-1 mt-20 lg:mt-36">
+              <div className="flex flex-wrap justify-center gap-1 mt-20 lg:mt-36">
                 <BannerCounter count="15 Y." text="Experience" />
                 <BannerCounter count="250+" text="Project Completed" />
                 <BannerCounter count="58" text="Happy Client" />

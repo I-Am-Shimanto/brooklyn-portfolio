@@ -22,7 +22,7 @@ const Process = () => {
               </p>
             </div>
             <div className="flex flex-col lg:flex-row gap-6">
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col items-center gap-6">
                 <ProcessCard
                   image="images/process1.png"
                   heading="1. Research"
@@ -34,7 +34,7 @@ const Process = () => {
                   body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu."
                 />
               </div>
-              <div className="flex flex-col gap-6 mt-6">
+              <div className="flex flex-col items-center gap-6 mt-6">
                 <ProcessCard
                   image="images/process2.png"
                   heading="2. Analyze"

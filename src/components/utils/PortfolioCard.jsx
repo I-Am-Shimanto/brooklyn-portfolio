@@ -19,7 +19,7 @@ const PortfolioCard = ({ image, top, heading, body, button }) => {
             {body}
           </p>
           <Link
-            className="w-fit py-3 px-6 border border-brand-color rounded-sm text-base font-semibold font-work-sans text-brand-color leading-8"
+            className="w-fit py-3 px-6 border border-brand-color hover:bg-black hover:text-white duration-300 rounded-sm text-base font-semibold font-work-sans text-brand-color leading-8"
             to="/"
           >
             <p className="flex items-center gap-3">
