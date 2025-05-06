@@ -1,6 +1,6 @@
-import React from 'react'
-import PortfolioCard from '../components/utils/PortfolioCard'
-import PrimaryBtn from '../components/utils/PrimaryBtn'
+import React from "react";
+import PortfolioCard from "../components/utils/PortfolioCard";
+import PrimaryBtn from "../components/utils/PrimaryBtn";
 
 const Portfolio = () => {
   return (
@@ -14,7 +14,7 @@ const Portfolio = () => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-          <div className="cards flex flex-wrap justify-between gap-3">
+          <div className="cards grid gird-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             <PortfolioCard
               image="images/portfolio1.png"
               top="UI-UX DESIGN"
@@ -58,13 +58,13 @@ const Portfolio = () => {
               button="Case Study"
             />
           </div>
-          <div className='text-center mt-[50px]'>
+          <div className="text-center mt-[50px]">
             <PrimaryBtn title="More Project" />
           </div>
         </div>
       </section>
     </>
   );
-}
+};
 
-export default Portfolio
+export default Portfolio;
