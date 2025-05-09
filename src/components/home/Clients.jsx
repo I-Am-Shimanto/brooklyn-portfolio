@@ -12,7 +12,7 @@ const Clients = () => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-          <div className="brands flex flex-wrap justify-center md:justify-between">
+          <div className="brands grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
             <img
               className="cursor-pointer"
               src="images/google.png"
