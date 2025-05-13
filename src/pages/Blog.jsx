@@ -1,7 +1,29 @@
 import React from "react";
 import BlogCard from "../components/utils/BlogCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import { NextArrow, PrevArrow } from "../components/utils/SliderBtn";
 
 const Blog = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: (
+      <NextArrow styling="absolute top-1/2 -right-10 -translate-y-1/2" />
+    ),
+    prevArrow: (
+      <PrevArrow styling="absolute top-1/2 -left-10 -translate-y-1/2" />
+    ),
+    appendDots: (dots) => (
+      <div>
+        <ul className="flex gap-5 justify-center"> {dots} </ul>
+      </div>
+    ),
+    customPaging: () => <div className="w-5 h-5 bg-brand-color rounded-full cursor-pointer"></div>,
+  };
   return (
     <>
       <section className="py-[100px]" id="blog">
@@ -13,7 +35,7 @@ const Blog = () => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+          <Slider {...settings}>
             <BlogCard
               image="images/blog1.png"
               heading="22 Oct, 2020 / 246 Comments"
@@ -34,7 +56,8 @@ const Blog = () => {
               heading="22 Oct, 2020 / 246 Comments"
               body="Lorem ipsum dolor sit consea. Nulla purus arcu"
             />
-          </div>
+          </Slider>
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6"></div>
         </div>
       </section>
     </>

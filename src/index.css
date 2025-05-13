@@ -19,10 +19,14 @@
 
 
 body{
-    background: url(../public/images/BG.png);
+    background: url(/images/BG.png);
     background-size: cover;
     background-repeat: no-repeat
 }
 a{
     @apply inline-block;
+}
+
+.slick-dots .slick-active div{
+    @apply bg-primary w-10 ease-in-out duration-500
 }
