@@ -22,7 +22,35 @@ const Blog = () => {
         <ul className="flex gap-5 justify-center"> {dots} </ul>
       </div>
     ),
-    customPaging: () => <div className="w-5 h-5 bg-brand-color rounded-full cursor-pointer"></div>,
+    customPaging: () => (
+      <div className="w-5 h-5 bg-brand-color rounded-full cursor-pointer"></div>
+    ),
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -35,29 +63,30 @@ const Blog = () => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-          <Slider {...settings}>
-            <BlogCard
-              image="images/blog1.png"
-              heading="22 Oct, 2020 / 246 Comments"
-              body="Lorem ipsum dolor sit consea. Nulla purus arcu"
-            />
-            <BlogCard
-              image="images/blog2.png"
-              heading="22 Oct, 2020 / 246 Comments"
-              body="Lorem ipsum dolor sit consea. Nulla purus arcu"
-            />
-            <BlogCard
-              image="images/blog3.png"
-              heading="22 Oct, 2020 / 246 Comments"
-              body="Lorem ipsum dolor sit consea. Nulla purus arcu"
-            />
-            <BlogCard
-              image="images/blog4.png"
-              heading="22 Oct, 2020 / 246 Comments"
-              body="Lorem ipsum dolor sit consea. Nulla purus arcu"
-            />
-          </Slider>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6"></div>
+          <div className="slider-container">
+            <Slider {...settings}>
+              <BlogCard
+                image="images/blog1.png"
+                heading="22 Oct, 2020 / 246 Comments"
+                body="Lorem ipsum dolor sit consea. Nulla purus arcu"
+              />
+              <BlogCard
+                image="images/blog2.png"
+                heading="22 Oct, 2020 / 246 Comments"
+                body="Lorem ipsum dolor sit consea. Nulla purus arcu"
+              />
+              <BlogCard
+                image="images/blog3.png"
+                heading="22 Oct, 2020 / 246 Comments"
+                body="Lorem ipsum dolor sit consea. Nulla purus arcu"
+              />
+              <BlogCard
+                image="images/blog4.png"
+                heading="22 Oct, 2020 / 246 Comments"
+                body="Lorem ipsum dolor sit consea. Nulla purus arcu"
+              />
+            </Slider>
+          </div>
         </div>
       </section>
     </>

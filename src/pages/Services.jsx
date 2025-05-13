@@ -2,6 +2,7 @@ import React from 'react'
 import PrimaryBtn from '../components/utils/PrimaryBtn'
 import ServiceCard from '../components/utils/ServiceCard'
 
+
 const Services = () => {
   return (
     <>
@@ -24,18 +25,7 @@ const Services = () => {
               <PrimaryBtn title="Say Hello!" />
             </div>
             <div className="cards flex flex-col gap-6">
-              <ServiceCard
-                heading="User Experience (UX)"
-                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum."
-              />
-              <ServiceCard
-                heading="User Interface (UI)"
-                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum."
-              />
-              <ServiceCard
-                heading="Web Development"
-                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum."
-              />
+              <ServiceCard />
             </div>
           </div>
         </div>

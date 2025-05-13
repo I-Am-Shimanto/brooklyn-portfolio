@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@plugin "daisyui" {
+   themes: light;
+ }
+
 
 @utility container{
     margin: auto;
