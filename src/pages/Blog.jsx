@@ -12,10 +12,10 @@ const Blog = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: (
-      <NextArrow styling="absolute top-1/2 -right-10 -translate-y-1/2" />
+      <NextArrow styling="absolute top-1/2 -right-5 -translate-y-1/2" />
     ),
     prevArrow: (
-      <PrevArrow styling="absolute top-1/2 -left-10 -translate-y-1/2" />
+      <PrevArrow styling="absolute top-1/2 -left-5 -translate-y-1/2" />
     ),
     appendDots: (dots) => (
       <div>
@@ -54,7 +54,7 @@ const Blog = () => {
   };
   return (
     <>
-      <section className="py-[100px]" id="blog">
+      <section className="py-[100px] overflow-hidden" id="blog">
         <div className="container">
           <h2 className="text-5xl font-semibold font-poppins text-primary leading-[56px] text-center">
             Blog
